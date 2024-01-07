@@ -10,8 +10,7 @@ export default function Mole(props) {
     });
     return (
         <div>
-            <h2>Mole Container</h2>
-            <img style={{ width: '30vw' }} src="moleHill.jpg" onClick={props.handleClick} alt="a mole" />
+            <img style={{ width: '30%' }} src="moleHill.jpg" onClick={props.handleClick} alt="a mole" />
         </div>
     );
 }

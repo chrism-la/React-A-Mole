@@ -1,0 +1,24 @@
+.moleHill {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('C:\Users\chris\code\Homework\React-A-Mole\react-a-mole\public\moleBackground.jpeg');
+  background-size: cover;
+}
+
+.App {
+  text-align: center;
+  margin: 20px;
+  border: 1px solid #ccc;
+}
