@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
-const moleImg = document.getElementById('moleImg');
 
-function Mole(props, moleImg) {
+export default function Mole(props) {
     useEffect(() => {
         let randSeconds = Math.ceil(Math.random() * 5000);
         let timer = setTimeout(() => {
@@ -12,9 +11,7 @@ function Mole(props, moleImg) {
 
     return (
         <div>
-            <img style={{ width: '30vw' }} src={moleImg} onClick={props.handleClick} alt="image of a mole" />
+            <img style={{ width: '30vw' }} src="../public/mole_edited.jpg" onClick={props.handleClick} alt="image of a mole" />
         </div>
     );
 }
-
-export { Mole };
