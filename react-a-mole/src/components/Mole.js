@@ -4,13 +4,13 @@ export default function Mole(props) {
     useEffect(() => {
         let randSeconds = Math.ceil(Math.random() * 5000);
         let timer = setTimeout(() => {
-            props.setDisplayMole(false);
+            props.toggle(false);
         }, randSeconds);
         return () => clearTimeout(timer);
     });
     return (
         <div>
-            <img style={{ width: '30%' }} src="molehill.png" onClick={props.handleClick} alt="a mole" />
+            <img style={{ width: '30vw' }} src="mole.png" onClick={props.handleClick} alt="a mole" />
         </div>
     );
 }
