@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import MoleContainer from './MoleContainer';
+import MoleContainer from './components/MoleContainer';
 
 function App() {
     let [score, setScore] = useState(0);
@@ -7,7 +7,7 @@ function App() {
     const createMoleHill = () => {
         let hills = [];
         for (let i = 0; i < 9; i++) {
-            hills.push(<MoleContainer key={0} setScore={setScore} score={score} />);
+            hills.push(<MoleContainer key={i} setScore={setScore} score={score} />);
         }
 
         return <div>{hills}</div>;
